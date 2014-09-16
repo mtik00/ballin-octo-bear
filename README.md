@@ -49,7 +49,7 @@ You also have the option of using `--chars` to add your own _constant word_
 identifiers.  You can use any single character, but it's best to **not** overwrite
 the defaults.  This command-line parameter should be a list of comma-separated
 "key,word" pairs.  For example: `--chars X,me Y,you Z,them`.  Using
-`--chars X,me Y,you Z,them --template "XAYNZ"` would` could produce
+`--chars X,me Y,you Z,them --template "XAYNZ"` could produce
 `me-bolt-you-sapote-them`.
 
 Word Data
