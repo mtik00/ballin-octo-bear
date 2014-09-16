@@ -32,6 +32,26 @@ Other than that, the script only uses Python built-ins, and requires no addition
 packages.  This script has been test on Windows Python 2.7, although I see no
 reason the script would not run on other operating systems.
 
+Template
+========
+
+The _template_ is a string of single-character identifiers.  The following
+identifiers are built in:
+* N -- A noun
+* V -- A verb
+* J -- An adverb
+* A -- An adjective
+
+Using this table, `--template "JN"` would produce a two-word name with an adverb
+for the first word and a noun for the second.  Example: `hooflike-piffle`.
+
+You also have the option of using `--chars` to add your own _constant word_
+identifiers.  You can use any single character, but it's best to **not** overwrite
+the defaults.  This command-line parameter should be a list of comma-separated
+"key,word" pairs.  For example: `--chars X,me Y,you Z,them`.  Using
+`--chars X,me Y,you Z,them --template "XAYNZ"` would` could produce
+`me-bolt-you-sapote-them`.
+
 Word Data
 =========
 
